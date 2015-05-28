@@ -1,0 +1,9 @@
+--context=2
+--type-add=ruby=.haml,.yml,.rake,.rsel
+--type-set=rst=.rst
+--type-set=bin=.pdf
+--nobin
+--nosql
+--ignore-dir=cache
+--ignore-dir=compressed
+--pager=most
