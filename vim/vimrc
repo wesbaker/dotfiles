@@ -1,0 +1,115 @@
+set shell=/bin/bash
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'sjl/gundo.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-surround'
+Plugin 'majutsushi/tagbar'
+Plugin 'mattn/emmet-vim'
+
+" Syntax/Language
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-markdown'
+Plugin '2072/PHP-Indenting-for-VIm'
+
+" Color Scheme
+Plugin 'tomasr/molokai'
+
+call vundle#end()
+
+syntax on
+filetype plugin indent on
+
+" Turn off VI compatability, we won't need it where we're going
+set nocompatible
+
+" Modelines can cause issues??
+set modelines=0
+
+" Fix up yer tabs, ya'll
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set noexpandtab
+
+" Whitespace
+set listchars=tab:▸\ 
+set list
+
+" Alright, here's a whole bunch of stuff I have no clue about :)
+set number
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set visualbell
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+
+" Use tabs instead of opening a buffer on top of another
+set switchbuf=usetab
+
+" Change the leader to comma, because backslash is so passe
+let mapleader = ","
+
+" Searching like it's 1999
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set hlsearch
+
+" Textwrap, sho' nuf
+set wrap
+set textwidth=0
+set linebreak
+set nolist
+set textwidth=0
+set wrapmargin=0
+let &showbreak = '→ '
+set colorcolumn=80
+
+" Safe after losing focus
+au FocusLost * silent! wa
+
+" Set color scheme
+if &t_Co >= 256 || has("gui_running")
+	colorscheme vwilight
+endif
+
+" MacVim Settings
+set guifont=Meslo\ LG\ L:h12
+
+" Ditch backup files
+set nobackup
+set noswapfile
+
+" MacVIM shift+arrow-keys behavior (required in .vimrc)
+let macvim_hig_shift_movement = 1
+
+" Strip trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+	" Preparation: save last search, and cursor position.
+	let _s=@/
+	let l = line(".")
+	let c = col(".")
+	" Do the business:
+	%s/\s\+$//e
+	" Clean up: restore previous search history, and cursor position
+	let @/=_s
+	call cursor(l, c)
+endfunction
+autocmd BufWritePre *.* :call <SID>StripTrailingWhitespaces()
