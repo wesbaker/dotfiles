@@ -1,0 +1,16 @@
+if has("gui_macvim")
+	" Add color column
+	set colorcolumn=80
+
+	" Always show tab bar
+	set showtabline=2
+endif
+
+" Start without the toolbar
+set guioptions-=T
+
+" Increase scrolloff
+set scrolloff=5
+
+" Disable search highlight on escape
+nnoremap <esc> :noh<return><esc>
