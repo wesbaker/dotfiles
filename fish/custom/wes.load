@@ -1,6 +1,6 @@
 # rbenv
 set -gx RBENV_ROOT /usr/local/var/rbenv
-# set -gx RBENV_BIN_ROOT /usr/local/var/rbenv/bin
+set -gx RBENV_BIN_ROOT /usr/local/var/rbenv/bin
 
 # Default editor is vim
 set -g -x EDITOR vim
@@ -10,7 +10,7 @@ set path_default /usr/bin /usr/sbin /bin /sbin
 set path_homebrew /usr/local/bin /usr/local/sbin
 set path_php (brew --prefix php56)/bin
 set path_node /usr/local/lib/noded
-set path_rbenv_homebrew "/usr/local/var/rbenv/shims"
+set path_rbenv_homebrew /usr/local/var/rbenv/shims
 set -gx PATH $path_rbenv_homebrew $path_homebrew $path_php $path_node $path_default
 
 # Homebrew
