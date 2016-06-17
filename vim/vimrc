@@ -22,6 +22,7 @@ Plugin '2072/PHP-Indenting-for-VIm'
 
 " Theme
 Plugin 'gosukiwi/vim-atom-dark'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
 
 " Work-specific
 Plugin 'phallstrom/vim-sailfish'
@@ -44,7 +45,7 @@ set softtabstop=4
 set noexpandtab
 
 " Whitespace
-set listchars=tab:▸\ 
+set listchars=tab:▸\
 set list
 
 " Alright, here's a whole bunch of stuff I have no clue about :)
@@ -115,3 +116,4 @@ function! <SID>StripTrailingWhitespaces()
 	call cursor(l, c)
 endfunction
 autocmd BufWritePre *.* :call <SID>StripTrailingWhitespaces()
+
