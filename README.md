@@ -11,10 +11,7 @@ Creates the following dotfiles:
 
 ## Installation
 
-- [Install Homebrew](http://brew.sh)
-- `brew tap homebrew/bundle`
-- `brew bundle`
-- `git clone`
-- `git submodule init` and `git submodule update`
+- `git clone git@github.com:wesbaker/dotfiles.git`
+- `bundle install`
 - Make sure the various dotfiles this project creates don't exist
-- `rake update`
+- `rake install`
