@@ -1,4 +1,5 @@
 tap 'homebrew/versions'
+
 brew 'ack'
 brew 'chruby'
 brew 'chruby-fish'
@@ -33,10 +34,10 @@ cask 'kaleidoscope'
 cask 'nvalt'
 cask 'psequel'
 cask 'sequel-pro'
-cask 'shimo'
 cask 'sonos'
 cask 'spotify'
 cask 'steam'
+cask 'superduper'
 cask 'textexpander'
 cask 'virtualbox'
 
