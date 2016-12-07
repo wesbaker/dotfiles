@@ -4,19 +4,29 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-fugitive'
 Plug 'sjl/gundo.vim'
-Plug 'ctrlpvim/ctrlp.vim', { 'on' : 'CtrlP' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'Raimondi/delimitMate'
-Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'editorconfig/editorconfig-vim'
 
 " Syntax/Language
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
-Plug '2072/PHP-Indenting-for-VIm', { 'for': 'php' }
+Plug 'vim-syntastic/syntastic'
+Plug 'paredit.vim', { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 " Theme
 Plug 'gosukiwi/vim-atom-dark'
@@ -26,20 +36,8 @@ Plug 'phallstrom/vim-sailfish', { 'for': 'gitcommit' }
 
 call plug#end()
 
-syntax on
-filetype plugin indent on
-
 " Turn off VI compatability, we won't need it where we're going
 set nocompatible
-
-" Modelines can cause issues??
-set modelines=0
-
-" Fix up yer tabs, ya'll
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set noexpandtab
 
 " Whitespace
 set listchars=tab:▸\
@@ -49,15 +47,10 @@ set list
 set number
 set encoding=utf-8
 set scrolloff=3
-set autoindent
 set showmode
 set showcmd
 set hidden
 set visualbell
-set ttyfast
-set ruler
-set backspace=indent,eol,start
-set laststatus=2
 
 " Use tabs instead of opening a buffer on top of another
 set switchbuf=usetab
@@ -80,37 +73,18 @@ set nolist
 set textwidth=0
 set wrapmargin=0
 let &showbreak = '→ '
-" set colorcolumn=80
-
-" Safe after losing focus
-au FocusLost * silent! wa
+set colorcolumn=80
 
 " Set color scheme
 if &t_Co >= 256 || has("gui_running")
-	colorscheme atom-dark
+  colorscheme atom-dark
 endif
-
-" MacVim Settings
-set guifont=Meslo\ LG\ L:h12
 
 " Ditch backup files
 set nobackup
 set noswapfile
 
-" MacVIM shift+arrow-keys behavior (required in .vimrc)
-let macvim_hig_shift_movement = 1
-
 " Strip trailing whitespace
-function! <SID>StripTrailingWhitespaces()
-	" Preparation: save last search, and cursor position.
-	let _s=@/
-	let l = line(".")
-	let c = col(".")
-	" Do the business:
-	%s/\s\+$//e
-	" Clean up: restore previous search history, and cursor position
-	let @/=_s
-	call cursor(l, c)
-endfunction
-autocmd BufWritePre *.* :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre * StripWhitespace
+let g:better_whitespace_filetypes_blacklist=['markdown']
 
