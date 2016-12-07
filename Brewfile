@@ -22,23 +22,20 @@ cask 'atom'
 cask 'backblaze'
 cask 'bartender'
 cask 'cloak'
+cask 'coderunner'
 cask 'dropbox'
 cask 'firefox'
-cask 'fluid'
-cask 'flux'
 cask 'github-desktop'
 cask 'google-chrome'
 cask 'iterm2'
 cask 'java'
 cask 'kaleidoscope'
-cask 'nvalt'
-cask 'psequel'
+cask 'paw'
 cask 'sequel-pro'
 cask 'sonos'
 cask 'spotify'
 cask 'steam'
 cask 'superduper'
-cask 'textexpander'
 cask 'virtualbox'
 
 mas '1Blocker', id: 1107421413
@@ -48,11 +45,9 @@ mas 'Calcbot', id: 931657367
 mas 'DaisyDisk', id: 411643860
 mas 'Dash', id: 449589707
 mas 'Day One', id: 1055511498
-mas 'Deliveries', id: 924726344
 mas 'Fantastical 2', id: 975937182
 mas 'Marked 2', id: 890031187
 mas 'Paprika Recipe Manager', id: 451907568
-mas 'Paw', id: 584653203
 mas 'Pixelmator', id: 407963104
 mas 'Reeder', id: 880001334
 mas 'Soulver', id: 413965349

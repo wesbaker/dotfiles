@@ -2,32 +2,29 @@ set shell=/bin/bash
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'sjl/gundo.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-surround'
-Plugin 'majutsushi/tagbar'
+Plug 'tpope/vim-fugitive'
+Plug 'sjl/gundo.vim'
+Plug 'ctrlpvim/ctrlp.vim', { 'on' : 'CtrlP' }
+Plug 'Raimondi/delimitMate'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 " Syntax/Language
-Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-markdown'
-Plugin '2072/PHP-Indenting-for-VIm'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+Plug '2072/PHP-Indenting-for-VIm', { 'for': 'php' }
 
 " Theme
-Plugin 'gosukiwi/vim-atom-dark'
-Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
+Plug 'gosukiwi/vim-atom-dark'
 
 " Work-specific
-Plugin 'phallstrom/vim-sailfish'
+Plug 'phallstrom/vim-sailfish', { 'for': 'gitcommit' }
 
-call vundle#end()
+call plug#end()
 
 syntax on
 filetype plugin indent on
