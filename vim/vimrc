@@ -20,6 +20,8 @@ Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'wakatime/vim-wakatime'
 
 " Syntax/Language
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
@@ -87,4 +89,8 @@ set noswapfile
 " Strip trailing whitespace
 autocmd BufWritePre * StripWhitespace
 let g:better_whitespace_filetypes_blacklist=['markdown']
+
+" Git Specific
+" http://blog.ezyang.com/2010/03/vim-textwidth/
+autocmd Filetype gitcommit setlocal spell tw=72 fo=cqt wm=0 cc=72
 
