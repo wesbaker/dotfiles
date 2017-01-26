@@ -6,4 +6,4 @@
 --nosql
 --ignore-dir=cache
 --ignore-dir=compressed
---pager=most
+--pager=less
