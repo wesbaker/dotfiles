@@ -22,16 +22,21 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'wakatime/vim-wakatime'
+Plug 'mechatroner/rainbow_csv'
 
 " Syntax/Language
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
-Plug 'vim-syntastic/syntastic'
 Plug 'paredit.vim', { 'for': 'clojure' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'tpope/vim-rails', { 'for': ['ruby'] }
+Plug 'vim-ruby/vim-ruby', { 'for': ['ruby'] }
+Plug 'w0rp/ale'
 
 " Theme
 Plug 'gosukiwi/vim-atom-dark'
+Plug 'gertjanreynaert/cobalt2-vim-theme'
 
 " Work-specific
 Plug 'phallstrom/vim-sailfish', { 'for': 'gitcommit' }
