@@ -18,7 +18,9 @@ task :install do
   system('brew bundle')
   system('git submodule init')
   system('git submodule update')
-  update 
+  system('curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher')
+  system('fisher install fzf z nitro fnm')
+  update
 end
 
 desc 'Install or Update dotfile repositories and files.'
