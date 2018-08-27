@@ -28,8 +28,6 @@ Plug 'mechatroner/rainbow_csv'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
-Plug 'paredit.vim', { 'for': 'clojure' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-rails', { 'for': ['ruby'] }
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby'] }
 Plug 'w0rp/ale'
