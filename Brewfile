@@ -1,6 +1,5 @@
 brew 'chruby'
 brew 'chruby-fish'
-brew 'composer'
 brew 'diff-so-fancy'
 brew 'exa'
 brew 'fish'
@@ -12,30 +11,25 @@ brew 'hub'
 brew 'jq'
 brew 'mas'
 brew 'node'
-brew 'python'
+brew 'python@2'
 brew 'the_silver_searcher'
 brew 'tldr'
 brew 'tmux'
 brew 'trash'
 brew 'tree'
 brew 'vim'
-brew 'youtube-dl'
 
 cask 'alfred'
-cask 'atom'
 cask 'backblaze'
 cask 'bartender'
-cask 'caprine'
 cask 'dash'
 cask 'dasiydisk'
-cask 'discord'
 cask 'docker'
 cask 'dropbox'
 cask 'duet'
 cask 'encryptme'
 cask 'firefox'
 cask 'firefox-developer-edition'
-cask 'focus'
 cask 'google-chrome'
 cask 'imageoptim'
 cask 'iterm2'
@@ -47,20 +41,16 @@ cask 'ngrok'
 cask 'now'
 cask 'paw'
 cask 'postico'
-cask 'printopia'
 cask 'qlcolorcode'
 cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
-cask 'rocket'
 cask 'scansnap-manager-ix500'
 cask 'skype'
 cask 'sonos'
 cask 'spotify'
-cask 'steam'
 cask 'superduper'
-cask 'vagrant'
 cask 'virtualbox'
 cask 'virtual-studio-code-insiders'
 cask 'webpquicklook'
@@ -71,14 +61,12 @@ mas 'Bear', id: 1091189122
 mas 'Calcbot', id: 931657367
 mas 'Day One', id: 1055511498
 mas 'Deliveries', id: 924726344
-mas 'GIF Brewery 3', id: 1081413713
 mas 'GIPHY CAPTURE', id: 668208984
 mas 'Keynote', id: 409183694
 mas 'Kindle', id: 405399194
 mas 'Lungo', id: 1263070803
 mas 'Magnet', id: 441258766
 mas 'Marked 2', id: 890031187
-mas 'MindNode', id: 1289197285
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Paprika Recipe Manager 3', id: 1303222628
