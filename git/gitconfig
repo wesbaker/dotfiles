@@ -10,19 +10,29 @@
 	diff = auto
 	status = auto
 [alias]
-	co = checkout
 	st = status
-	br = branch
-	amend = commit
+	co = checkout
+  cob = checkout -b
+  com = checkout master
+  comb = "!f() { git fetch; git checkout -b $1 master; }; f"
+	c = commit
+  ca = commit --amend
+	b = branch
+  rbm = rebase master
+  rbfm = "!git checkout master; git pull; git checkout -; git rebase master"
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	rc = commit --amend --no-edit
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	process = git-lfs filter-process
 	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 [branch]
 	autosetupmerge = true
 [diff]
 	compactionHeuristic = true
+	tool = Kaleidoscope
+	colorMoved = zebra
 [interactive]
 	diffFilter = diff-highlight
 [color "diff-highlight"]
@@ -30,3 +40,16 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[init]
+	templatedir = /Users/wbaker/.git-templates
