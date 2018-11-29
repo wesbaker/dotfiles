@@ -18,8 +18,8 @@ task :install do
   system('brew bundle')
   system('git submodule init')
   system('git submodule update')
-  system('curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher')
-  system('fisher install fzf z nitro fnm')
+  system('curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish')
+  system('fisher add jethrokuan/fzf jethrokuan/z jorgebucaran/fnm lanzafame/nitro')
   update
 end
 
