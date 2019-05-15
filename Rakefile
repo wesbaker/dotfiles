@@ -8,7 +8,8 @@ $symlinks = {
   '~/.gitconfig': 'git/gitconfig',
   '~/.vim': 'vim/vim',
   '~/.vimrc': 'vim/vimrc',
-  '~/.gvimrc': 'vim/gvimrc'
+  '~/.gvimrc': 'vim/gvimrc',
+  '~/.tmux.conf': 'tmux.conf'
 }
 
 desc 'Install basic setup'

@@ -5,6 +5,7 @@ Creates the following dotfiles:
 - `.ackrc`
 - `.vimrc`
 - `.gvimrc`
+- `.tmux.conf`
 - `.vim/`
 - `.gitignore`
 - `.gitmodules`
