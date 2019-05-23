@@ -1,56 +1,57 @@
 [user]
-	email = wes@wesbaker.com
-	name = Wes Baker
+  email = wes@wesbaker.com
+  name = Wes Baker
 [core]
-	excludesfile = /Users/wbaker/.gitignore
-	pager = diff-so-fancy | less --tabs=4 -RFX
-	editor = /usr/local/bin/vim
-	trustctime = false
+  excludesfile = /Users/wbaker/.gitignore
+  pager = diff-so-fancy | less --tabs=4 -RFX
+  editor = /usr/local/bin/vim
+  trustctime = false
 [color]
-	branch = auto
-	diff = auto
-	status = auto
+  branch = auto
+  diff = auto
+  status = auto
 [alias]
-	st = status
-	co = checkout
+  st = status
+  co = checkout
   cob = checkout -b
   com = checkout master
   comb = "!f() { git fetch; git checkout -b $1 master; }; f"
-	c = commit
+  c = commit
   ca = commit --amend
-	b = branch
+  b = branch
   rbm = rebase master
   rbfm = "!git checkout master; git pull; git checkout -; git rebase master"
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	rc = commit --amend --no-edit
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  rc = commit --amend --no-edit
+  pt = !git push origin HEAD:refs/for/master/$(git log -n 1 | grep -Eo '([A-Z]+-\\d+)')
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
 [branch]
-	autosetupmerge = true
+  autosetupmerge = true
 [diff]
-	compactionHeuristic = true
-	tool = Kaleidoscope
-	colorMoved = zebra
+  compactionHeuristic = true
+  tool = Kaleidoscope
+  colorMoved = zebra
 [interactive]
-	diffFilter = diff-highlight
+  diffFilter = diff-highlight
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustexitcode = true
 [merge]
-	tool = Kaleidoscope
+  tool = Kaleidoscope
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
-	prompt = false
+  prompt = false
 [mergetool]
-	prompt = false
+  prompt = false
 [init]
-	templatedir = /Users/wbaker/.git-templates
+  templatedir = /Users/wbaker/.git-templates
