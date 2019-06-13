@@ -65,6 +65,7 @@ cask 'quicklook-json'
 cask 'rescuetime'
 cask 'rocket'
 cask 'sonos'
+cask 'soulver'
 cask 'spotify'
 cask 'virtualbox'
 cask 'visual-studio-code-insiders'
@@ -91,7 +92,6 @@ mas 'Pastebot', id: 1179623856
 mas 'Pixelmator', id: 407963104
 mas 'Renamer 5', id: 1063661581
 mas 'Slack', id: 803453959
-mas 'Soulver', id: 413965349
 mas 'Spillo', id: 873245660
 mas 'The Unarchiver', id: 425424353
 mas 'Thermo Watch', id: 1299951059
