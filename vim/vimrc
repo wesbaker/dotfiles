@@ -34,11 +34,7 @@ Plug 'w0rp/ale'
 Plug 'stephpy/vim-yaml'
 
 " Theme
-Plug 'gosukiwi/vim-atom-dark'
 Plug 'gertjanreynaert/cobalt2-vim-theme'
-
-" Work-specific
-Plug 'phallstrom/vim-sailfish', { 'for': 'gitcommit' }
 
 call plug#end()
 
@@ -80,11 +76,6 @@ set textwidth=0
 set wrapmargin=0
 let &showbreak = '→ '
 set colorcolumn=80
-
-" Set color scheme
-if &t_Co >= 256 || has("gui_running")
-  colorscheme atom-dark
-endif
 
 " Ditch backup files
 set nobackup

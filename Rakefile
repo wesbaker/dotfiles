@@ -6,7 +6,6 @@ $symlinks = {
   '~/.ackrc': 'ackrc',
   '~/.gitignore': 'git/gitignore',
   '~/.gitconfig': 'git/gitconfig',
-  '~/.vim': 'vim/vim',
   '~/.vimrc': 'vim/vimrc',
   '~/.gvimrc': 'vim/gvimrc',
   '~/.tmux.conf': 'tmux.conf'
@@ -14,13 +13,21 @@ $symlinks = {
 
 desc 'Install basic setup'
 task :install do
+  # Install homebrew
   system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
+
+  # Install everything in Brewfile
   system('brew tap homebrew/bundle')
   system('brew bundle')
-  system('git submodule init')
-  system('git submodule update')
+  
+  # Install vim-plug and install plugins
+  system('curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
+  system('vim -c ":PlugInstall|q|q"')
+
+  # Install fisher and plugins
   system('curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish')
-  system('fisher add jethrokuan/fzf jethrokuan/z jorgebucaran/fnm lanzafame/nitro')
+  system('fisher add jethrokuan/fzf jethrokuan/z jorgebucaran/fish-nvm laughedelic/pisces rafaelrinaldi/pure')
+
   update
 end
 
