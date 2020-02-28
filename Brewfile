@@ -37,6 +37,7 @@ cask 'hazel'
 cask 'iterm2'
 cask 'kaleidoscope'
 cask 'mongodb-compass'
+cask 'monodraw'
 cask 'now'
 cask 'paw'
 cask 'prusaslicer'
@@ -72,5 +73,6 @@ mas 'The Unarchiver', id: 425424353
 mas 'Thermo Watch', id: 1299951059
 mas 'Todoist', id: 585829637
 mas 'ToothFairy', id: 1191449274
+mas 'Trello', id: 1278508951
 mas 'Watch Cam', id: 1342107355
 mas 'xScope', id: 889428659
