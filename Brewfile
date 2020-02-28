@@ -77,9 +77,7 @@ mas 'SmileAllDay', id: 1180442868
 mas 'Spillo', id: 873245660
 mas 'Spillo', id: 873245660
 mas 'The Unarchiver', id: 425424353
-mas 'Thermo Watch', id: 1299951059
 mas 'Todoist', id: 585829637
 mas 'ToothFairy', id: 1191449274
 mas 'Trello', id: 1278508951
-mas 'Watch Cam', id: 1342107355
 mas 'xScope', id: 889428659
