@@ -55,3 +55,5 @@
   prompt = false
 [init]
   templatedir = /Users/wbaker/.git-templates
+[push]
+	default = current
