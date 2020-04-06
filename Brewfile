@@ -11,6 +11,7 @@ brew 'fish'
 brew 'fzf'
 brew 'gist'
 brew 'git'
+brew 'httpie'
 brew 'hub'
 brew 'jq'
 brew 'mas'
@@ -41,6 +42,7 @@ cask 'monodraw'
 cask 'now'
 cask 'paw'
 cask 'prusaslicer'
+cask 'raindropio'
 cask 'rocket'
 cask 'sonos'
 cask 'soulver'
@@ -74,8 +76,6 @@ mas 'Reeder', id: 1449412482
 mas 'Renamer 5', id: 1063661581
 mas 'Slack', id: 803453959
 mas 'SmileAllDay', id: 1180442868
-mas 'Spillo', id: 873245660
-mas 'Spillo', id: 873245660
 mas 'The Unarchiver', id: 425424353
 mas 'Todoist', id: 585829637
 mas 'ToothFairy', id: 1191449274

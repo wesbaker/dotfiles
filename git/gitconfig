@@ -1,6 +1,3 @@
-[user]
-  email = wes@wesbaker.com
-  name = Wes Baker
 [core]
   excludesfile = /Users/wbaker/.gitignore
   pager = diff-so-fancy | less --tabs=4 -RFX
@@ -57,3 +54,6 @@
   templatedir = /Users/wbaker/.git-templates
 [push]
 	default = current
+[user]
+	useConfigOnly = true
+
