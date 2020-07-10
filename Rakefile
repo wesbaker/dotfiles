@@ -16,13 +16,15 @@ $symlinks = {
 
 desc 'Install basic setup'
 task :install do
+  create_symlinks
+
   # Install homebrew
   system('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"')
 
   # Install everything in Brewfile
   system('brew tap homebrew/bundle')
   system('brew bundle')
-  
+
   # Install vim-plug and install plugins
   system('curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
   system('vim -c ":PlugInstall|q|q"')
@@ -34,10 +36,10 @@ end
 
 desc 'Install or Update dotfile repositories and files.'
 task :update do
-  update
+  create_symlinks
 end
 
-def update
+def create_symlinks
   $symlinks.each do |symlink, path|
     symlink = File.expand_path(symlink.to_s)
     path    = File.expand_path(path)
