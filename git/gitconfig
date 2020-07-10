@@ -3,6 +3,7 @@
   pager = diff-so-fancy | less --tabs=4 -RFX
   editor = /usr/local/bin/vim
   trustctime = false
+	autocrlf = input
 [color]
   branch = auto
   diff = auto
@@ -27,7 +28,7 @@
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
 [branch]
-  autosetupmerge = true
+  autosetupmerge = always
 [diff]
   compactionHeuristic = true
   tool = Kaleidoscope
@@ -50,10 +51,12 @@
   prompt = false
 [mergetool]
   prompt = false
-[init]
-  templatedir = /Users/wbaker/.git-templates
 [push]
 	default = current
 [user]
 	useConfigOnly = true
+	name = wesbaker
+	email = wes@wesbaker.com
 
+[pull]
+	rebase = false
