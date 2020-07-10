@@ -8,7 +8,10 @@ $symlinks = {
   '~/.gitconfig': 'git/gitconfig',
   '~/.vimrc': 'vim/vimrc',
   '~/.gvimrc': 'vim/gvimrc',
-  '~/.tmux.conf': 'tmux.conf'
+  '~/.tmux.conf': 'tmux.conf',
+  '~/.config/fish/fishfile': 'config/fish/fishfile',
+  '~/.config/fish/config.fish': 'config/fish/config.fish',
+  '~/.config/fish/conf.d/rust.fish': 'config/fish/conf.d/rust.fish'
 }
 
 desc 'Install basic setup'
