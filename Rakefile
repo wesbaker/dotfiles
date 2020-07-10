@@ -17,7 +17,7 @@ $symlinks = {
 desc 'Install basic setup'
 task :install do
   # Install homebrew
-  system('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
+  system('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"')
 
   # Install everything in Brewfile
   system('brew tap homebrew/bundle')
@@ -29,9 +29,7 @@ task :install do
 
   # Install fisher and plugins
   system('curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish')
-  system('fisher add jethrokuan/fzf jethrokuan/z jorgebucaran/fish-nvm laughedelic/pisces rafaelrinaldi/pure')
-
-  update
+  system('fisher') # Plugins are listed in fishfile
 end
 
 desc 'Install or Update dotfile repositories and files.'
