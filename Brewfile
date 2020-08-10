@@ -31,7 +31,6 @@ brew 'vim'
 brew 'yarn'
 
 cask 'alfred'
-cask 'backblaze'
 cask 'bartender'
 cask 'caprine'
 cask 'carbon-copy-cloner'
