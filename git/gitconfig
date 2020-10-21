@@ -12,23 +12,21 @@
   st = status
   co = checkout
   cob = checkout -b
-  com = checkout master
-  comb = "!f() { git fetch; git checkout -b $1 master; }; f"
+  com = checkout main
+  comb = "!f() { git fetch; git checkout -b $1 main; }; f"
+  cow = checkout weekly-deploy
   c = commit
   ca = commit --amend
   b = branch
-  rbm = rebase master
-  rbfm = "!git checkout master; git pull; git checkout -; git rebase master"
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   rc = commit --amend --no-edit
-  pt = !git push origin HEAD:refs/for/master/$(git log -n 1 | grep -Eo '([A-Z]+-\\d+)')
 [filter "lfs"]
   process = git-lfs filter-process
   required = true
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
 [branch]
-  autosetupmerge = always
+  autosetupmerge = true
 [diff]
   compactionHeuristic = true
   tool = Kaleidoscope
@@ -57,6 +55,5 @@
 	useConfigOnly = true
 	name = wesbaker
 	email = wes@wesbaker.com
-
 [pull]
 	rebase = false
