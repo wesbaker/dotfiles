@@ -9,7 +9,7 @@ $symlinks = {
   '~/.vimrc': 'vim/vimrc',
   '~/.gvimrc': 'vim/gvimrc',
   '~/.tmux.conf': 'tmux.conf',
-  '~/.config/fish/fishfile': 'config/fish/fishfile',
+  '~/.config/fish/fish_plugins': 'config/fish/fish_plugins',
   '~/.config/fish/config.fish': 'config/fish/config.fish',
   '~/.config/fish/conf.d/rust.fish': 'config/fish/conf.d/rust.fish'
 }
@@ -31,7 +31,7 @@ task :install do
 
   # Install fisher and plugins
   system('curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish')
-  system('fisher') # Plugins are listed in fishfile
+  system('fisher') # Plugins are listed in fish_plugins
 end
 
 desc 'Install or Update dotfile repositories and files.'
