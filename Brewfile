@@ -39,25 +39,22 @@ cask 'alfred'
 cask 'bartender'
 cask 'caprine'
 cask 'carbon-copy-cloner'
+cask 'choosy'
 cask 'dash'
 cask 'discord'
 cask 'docker'
 cask 'drawio'
 cask 'dropbox'
 cask 'firefox-developer-edition'
-cask 'focus'
 cask 'fujitsu-scansnap-manager-ix500'
 cask 'github'
 cask 'google-chrome'
 cask 'hazel'
+cask 'hyper'
 cask 'imageoptim'
 cask 'iterm2'
 cask 'kaleidoscope'
 cask 'mongodb-compass'
-cask 'monodraw'
-cask 'netnewswire'
-cask 'notion'
-cask 'obsidian'
 cask 'paw'
 cask 'proxyman'
 cask 'prusaslicer'
@@ -66,18 +63,18 @@ cask 'rocket'
 cask 'slite'
 cask 'sonos'
 cask 'soulver'
-cask 'spotify'
 cask 'transmit'
 cask 'visual-studio-code-insiders'
-cask 'zoomus'
+cask 'zoom'
 
 mas '1Password 7', id: 1333542190
+mas 'Agenda', id: 1287445660
 mas 'Bear', id: 1091189122
 mas 'Calcbot', id: 931657367
 mas 'CARROT Weather', id: 993487541
 mas 'Day One', id: 1055511498
 mas 'Deliveries', id: 924726344
-mas 'GIPHY CAPTURE', id: 668208984
+mas 'GIF Brewery 3', id: 1081413713
 mas 'GoodNotes', id: 1444383602
 mas 'HEIC Converter', id: 1294126402
 mas 'Instapaper', id: 1481302432
@@ -94,13 +91,12 @@ mas 'Paprika Recipe Manager 3', id: 1303222628
 mas 'Pastebot', id: 1179623856
 mas 'PDF Viewer', id: 1475494784
 mas 'Pixelmator Pro', id: 1289583905
-mas 'Pixelmator', id: 407963104
 mas 'Raindrop.io for Safari', id: 957810159
 mas 'Renamer 5', id: 1063661581
 mas 'Slack', id: 803453959
 mas 'SmileAllDay', id: 1180442868
-mas 'Streaks', id: 1493327990
+mas 'Subtrack', id: 1519946553
 mas 'The Unarchiver', id: 425424353
-mas 'Todoist', id: 585829637
 mas 'Trello', id: 1278508951
+mas 'Wipr', id: 1320666476
 mas 'xScope', id: 889428659
