@@ -1,6 +1,5 @@
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-versions'
-tap 'github/gh'
 
 brew 'awscli@1', link: true
 brew 'bat'
@@ -14,12 +13,12 @@ brew 'fnm'
 brew 'fzf'
 brew 'gist'
 brew 'git'
-brew 'github/gh/gh'
+brew 'gh'
 brew 'glow'
 brew 'httpie'
 brew 'jq'
 brew 'kubectl'
-brew 'kubens'
+brew 'kubectx'
 brew 'kops'
 brew 'lazydocker'
 brew 'mas'
@@ -73,7 +72,7 @@ mas 'Bear', id: 1091189122
 mas 'Calcbot', id: 931657367
 mas 'CARROT Weather', id: 993487541
 mas 'Day One', id: 1055511498
-mas 'Deliveries', id: 924726344
+mas 'Deliveries', id: 290986013
 mas 'GIF Brewery 3', id: 1081413713
 mas 'GoodNotes', id: 1444383602
 mas 'HEIC Converter', id: 1294126402
