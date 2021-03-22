@@ -11,7 +11,10 @@ $symlinks = {
   '~/.tmux.conf': 'tmux.conf',
   '~/.config/fish/fish_plugins': 'config/fish/fish_plugins',
   '~/.config/fish/config.fish': 'config/fish/config.fish',
-  '~/.config/fish/conf.d/rust.fish': 'config/fish/conf.d/rust.fish'
+  '~/.config/fish/conf.d/rust.fish': 'config/fish/conf.d/rust.fish',
+  '~/.config/fish/conf.d/chruby.fish': 'config/fish/conf.d/chruby.fish',
+  '~/.config/fish/conf.d/fnm.fish': 'config/fish/conf.d/fnm.fish',
+  '~/.config/fish/conf.d/bobthefish.fish': 'config/fish/conf.d/bobthefish.fish'
 }
 
 desc 'Install basic setup'

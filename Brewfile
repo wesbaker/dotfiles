@@ -1,10 +1,10 @@
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-versions'
 
-brew 'awscli@1', link: true
 brew 'bat'
 brew 'chruby'
 brew 'chruby-fish'
+brew 'deno'
 brew 'diff-so-fancy'
 brew 'duf'
 brew 'exa'
@@ -32,36 +32,38 @@ brew 'tldr'
 brew 'trash'
 brew 'tree'
 brew 'vim'
+brew 'xh'
 brew 'yarn'
+brew 'youtube-dl'
 
+cask 'adobe-acrobat-reader'
 cask 'alfred'
 cask 'bartender'
-cask 'caprine'
 cask 'carbon-copy-cloner'
 cask 'choosy'
 cask 'dash'
 cask 'discord'
 cask 'docker'
-cask 'drawio'
 cask 'dropbox'
-cask 'firefox-developer-edition'
 cask 'fujitsu-scansnap-manager-ix500'
 cask 'github'
 cask 'google-chrome'
 cask 'hazel'
-cask 'hyper'
 cask 'imageoptim'
 cask 'iterm2'
 cask 'kaleidoscope'
 cask 'mongodb-compass'
+cask 'nova'
 cask 'paw'
 cask 'proxyman'
 cask 'prusaslicer'
 cask 'raindropio'
+cask 'raycast'
 cask 'rocket'
 cask 'slite'
 cask 'sonos'
 cask 'soulver'
+cask 'steam'
 cask 'transmit'
 cask 'visual-studio-code-insiders'
 cask 'zoom'
@@ -73,17 +75,22 @@ mas 'Calcbot', id: 931657367
 mas 'CARROT Weather', id: 993487541
 mas 'Day One', id: 1055511498
 mas 'Deliveries', id: 290986013
+mas 'Dice', id: 1479250666
+mas 'GameTrack', id: 1136800740
 mas 'GIF Brewery 3', id: 1081413713
 mas 'GoodNotes', id: 1444383602
 mas 'HEIC Converter', id: 1294126402
-mas 'Instapaper', id: 1481302432
-mas 'Jiffy', id: 1502527999
+mas 'HomePass', id: 1330266650
+mas 'Instapaper Save', id: 1481302432
+mas 'InstaRemind', id: 1492317385
 mas 'Keynote', id: 409183694
 mas 'Kindle', id: 405399194
 mas 'Lungo', id: 1263070803
 mas 'Magnet', id: 441258766
 mas 'Marked 2', id: 890031187
 mas 'MindNode', id: 1289197285
+mas 'MusicHarbor', id: 1440405750
+mas 'Next Meeting', id: 1017470484
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Paprika Recipe Manager 3', id: 1303222628
@@ -91,11 +98,15 @@ mas 'Pastebot', id: 1179623856
 mas 'PDF Viewer', id: 1475494784
 mas 'Pixelmator Pro', id: 1289583905
 mas 'Raindrop.io for Safari', id: 957810159
+mas 'Reeder', id: 1529448980
 mas 'Renamer 5', id: 1063661581
 mas 'Slack', id: 803453959
 mas 'SmileAllDay', id: 1180442868
+mas 'stts', id: 1187772509
 mas 'Subtrack', id: 1519946553
+mas 'Tabs to Links', id: 1451408472
 mas 'The Unarchiver', id: 425424353
 mas 'Trello', id: 1278508951
 mas 'Wipr', id: 1320666476
+mas 'Xcode', id: 497799835
 mas 'xScope', id: 889428659
