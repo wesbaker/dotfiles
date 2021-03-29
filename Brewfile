@@ -61,12 +61,12 @@ mas '1Password 7', id: 1333542190
 mas 'Agenda', id: 1287445660
 mas 'Bear', id: 1091189122
 mas 'Calcbot', id: 931657367
-mas 'CARROT Weather', id: 993487541
 mas 'Day One', id: 1055511498
 mas 'Deliveries', id: 290986013
 mas 'Diagrams', id: 1276248849
 mas 'GoodNotes', id: 1444383602
 mas 'HEIC Converter', id: 1294126402
+mas 'Highlights', id: 1498912833
 mas 'Hush', id: 1544743900
 mas 'iA Writer', id: 775737590
 mas 'Instapaper Save', id: 1481302432
@@ -74,6 +74,7 @@ mas 'InstaRemind', id: 1492317385
 mas 'Keynote', id: 409183694
 mas 'Kindle', id: 405399194
 mas 'Magnet', id: 441258766
+mas 'Messenger', id: 1480068668
 mas 'MindNode', id: 1289197285
 mas 'Next Meeting', id: 1017470484
 mas 'Numbers', id: 409203825
