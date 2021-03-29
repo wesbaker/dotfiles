@@ -64,6 +64,7 @@ mas 'Calcbot', id: 931657367
 mas 'CARROT Weather', id: 993487541
 mas 'Day One', id: 1055511498
 mas 'Deliveries', id: 290986013
+mas 'Diagrams', id: 1276248849
 mas 'GoodNotes', id: 1444383602
 mas 'HEIC Converter', id: 1294126402
 mas 'Hush', id: 1544743900
