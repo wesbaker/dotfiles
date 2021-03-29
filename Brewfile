@@ -14,26 +14,17 @@ brew 'fzf'
 brew 'gist'
 brew 'git'
 brew 'gh'
-brew 'glow'
-brew 'httpie'
 brew 'jq'
-brew 'kubectl'
-brew 'kubectx'
-brew 'kops'
 brew 'lazydocker'
 brew 'mas'
 brew 'ripgrep'
 brew 'rustup-init'
 brew 'saml2aws'
-brew 'samtay/tui/so'
-brew 'tfenv'
 brew 'the_silver_searcher'
 brew 'tldr'
-brew 'trash'
 brew 'tree'
 brew 'vim'
 brew 'xh'
-brew 'yarn'
 brew 'youtube-dl'
 
 cask 'adobe-acrobat-reader'
@@ -53,14 +44,12 @@ cask 'imageoptim'
 cask 'iterm2'
 cask 'kaleidoscope'
 cask 'mongodb-compass'
-cask 'nova'
 cask 'paw'
 cask 'proxyman'
 cask 'prusaslicer'
 cask 'raindropio'
 cask 'raycast'
 cask 'rocket'
-cask 'slite'
 cask 'sonos'
 cask 'soulver'
 cask 'steam'
@@ -75,21 +64,16 @@ mas 'Calcbot', id: 931657367
 mas 'CARROT Weather', id: 993487541
 mas 'Day One', id: 1055511498
 mas 'Deliveries', id: 290986013
-mas 'Dice', id: 1479250666
-mas 'GameTrack', id: 1136800740
-mas 'GIF Brewery 3', id: 1081413713
 mas 'GoodNotes', id: 1444383602
 mas 'HEIC Converter', id: 1294126402
-mas 'HomePass', id: 1330266650
+mas 'Hush', id: 1544743900
+mas 'iA Writer', id: 775737590
 mas 'Instapaper Save', id: 1481302432
 mas 'InstaRemind', id: 1492317385
 mas 'Keynote', id: 409183694
 mas 'Kindle', id: 405399194
-mas 'Lungo', id: 1263070803
 mas 'Magnet', id: 441258766
-mas 'Marked 2', id: 890031187
 mas 'MindNode', id: 1289197285
-mas 'MusicHarbor', id: 1440405750
 mas 'Next Meeting', id: 1017470484
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
@@ -102,11 +86,10 @@ mas 'Reeder', id: 1529448980
 mas 'Renamer 5', id: 1063661581
 mas 'Slack', id: 803453959
 mas 'SmileAllDay', id: 1180442868
-mas 'stts', id: 1187772509
 mas 'Subtrack', id: 1519946553
 mas 'Tabs to Links', id: 1451408472
+mas 'TextSniper', id: 1528890965
 mas 'The Unarchiver', id: 425424353
-mas 'Trello', id: 1278508951
 mas 'Wipr', id: 1320666476
 mas 'Xcode', id: 497799835
 mas 'xScope', id: 889428659
