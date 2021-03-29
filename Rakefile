@@ -22,10 +22,9 @@ task :install do
   create_symlinks
 
   # Install homebrew
-  system('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"')
+  system('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"')
 
   # Install everything in Brewfile
-  system('brew tap homebrew/bundle')
   system('brew bundle')
 
   # Install vim-plug and install plugins
@@ -33,7 +32,7 @@ task :install do
   system('vim -c ":PlugInstall|q|q"')
 
   # Install fisher and plugins
-  system('curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish')
+  system('curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher')
   system('fisher') # Plugins are listed in fish_plugins
 end
 
