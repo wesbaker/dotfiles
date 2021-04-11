@@ -19,6 +19,7 @@ $symlinks = {
 
 desc 'Install basic setup'
 task :install do
+  create_directories
   create_symlinks
 
   # Install homebrew
@@ -42,6 +43,10 @@ end
 desc 'Install or Update dotfile repositories and files.'
 task :update do
   create_symlinks
+end
+
+def create_directories
+  FileUtils.mkdir_p '~/.config/fish/conf.d/'
 end
 
 def create_symlinks
