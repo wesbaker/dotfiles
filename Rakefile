@@ -34,6 +34,9 @@ task :install do
   # Install fisher and plugins
   system('curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher')
   system('fisher') # Plugins are listed in fish_plugins
+
+  # Install LTS version of Node.js
+  system('fnm install --lts')
 end
 
 desc 'Install or Update dotfile repositories and files.'
