@@ -53,7 +53,7 @@
 	default = current
 [user]
 	useConfigOnly = true
-	name = wesbaker
+	name = Wes Baker
 	email = wes@wesbaker.com
 [pull]
 	rebase = false
