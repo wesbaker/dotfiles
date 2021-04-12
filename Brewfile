@@ -83,7 +83,7 @@ mas 'Paprika Recipe Manager 3', id: 1303222628
 mas 'Pastebot', id: 1179623856
 mas 'PDF Viewer', id: 1475494784
 mas 'Pixelmator Pro', id: 1289583905
-mas 'Raindrop.io for Safari', id: 957810159
+mas 'Raindrop.io for Safari', id: 1549370672
 mas 'Reeder', id: 1529448980
 mas 'Renamer 5', id: 1063661581
 mas 'Slack', id: 803453959
