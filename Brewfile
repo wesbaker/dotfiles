@@ -38,18 +38,16 @@ cask 'docker'
 cask 'dropbox'
 cask 'fujitsu-scansnap-manager-ix500'
 cask 'github'
+cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'hazel'
-cask 'imageoptim'
 cask 'iterm2-beta'
 cask 'kaleidoscope'
-cask 'mongodb-compass'
 cask 'paw'
 cask 'postico'
 cask 'proxyman'
 cask 'prusaslicer'
 cask 'raindropio'
-cask 'raycast'
 cask 'rocket'
 cask 'sonos'
 cask 'soulver'
@@ -59,7 +57,6 @@ cask 'visual-studio-code-insiders'
 cask 'zoom'
 
 mas '1Password 7', id: 1333542190
-mas 'Agenda', id: 1287445660
 mas 'Bear', id: 1091189122
 mas 'Calcbot', id: 931657367
 mas 'Day One', id: 1055511498
@@ -84,7 +81,7 @@ mas 'Paprika Recipe Manager 3', id: 1303222628
 mas 'Pastebot', id: 1179623856
 mas 'PDF Viewer', id: 1475494784
 mas 'Pixelmator Pro', id: 1289583905
-mas 'Raindrop.io for Safari', id: 1549370672
+mas 'Save to Raindrop.io', id: 1549370672
 mas 'Reeder', id: 1529448980
 mas 'Renamer 5', id: 1063661581
 mas 'Slack', id: 803453959
