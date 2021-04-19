@@ -1,6 +1,3 @@
-tap 'homebrew/cask-drivers'
-tap 'homebrew/cask-versions'
-
 brew 'bat'
 brew 'chruby'
 brew 'chruby-fish'
@@ -15,11 +12,9 @@ brew 'gist'
 brew 'git'
 brew 'gh'
 brew 'jq'
-brew 'lazydocker'
 brew 'mas'
 brew 'ripgrep'
 brew 'rustup-init'
-brew 'saml2aws'
 brew 'the_silver_searcher'
 brew 'tldr'
 brew 'tree'
@@ -34,9 +29,7 @@ cask 'carbon-copy-cloner'
 cask 'choosy'
 cask 'dash'
 cask 'discord'
-cask 'docker'
 cask 'dropbox'
-cask 'fujitsu-scansnap-manager-ix500'
 cask 'github'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
@@ -44,7 +37,6 @@ cask 'hazel'
 cask 'iterm2-beta'
 cask 'kaleidoscope'
 cask 'paw'
-cask 'postico'
 cask 'proxyman'
 cask 'prusaslicer'
 cask 'raindropio'
@@ -72,9 +64,9 @@ mas 'InstaRemind', id: 1492317385
 mas 'Keynote', id: 409183694
 mas 'Kindle', id: 405399194
 mas 'Magnet', id: 441258766
+mas 'MeetingBar', id: 1532419400
 mas 'Messenger', id: 1480068668
 mas 'MindNode', id: 1289197285
-mas 'Next Meeting', id: 1017470484
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Paprika Recipe Manager 3', id: 1303222628
