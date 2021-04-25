@@ -1,3 +1,5 @@
+tap 'homebrew/cask-versions'
+
 brew 'bat'
 brew 'chruby'
 brew 'chruby-fish'
