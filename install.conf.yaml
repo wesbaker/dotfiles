@@ -1,0 +1,36 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- create:
+    - ~/.config/fish/conf.d
+
+- clean: ["~"]
+
+- link:
+    ~/.ackrc: ackrc
+    ~/.gitignore: git/gitignore
+    ~/.gitconfig: git/gitconfig
+    ~/.vimrc: vim/vimrc
+    ~/.gvimrc: vim/gvimrc
+    ~/.tmux.conf: tmux.conf
+    ~/.config/fish/fish_plugins: config/fish/fish_plugins
+    ~/.config/fish/config.fish: config/fish/config.fish
+    ~/.config/fish/conf.d/rust.fish: config/fish/conf.d/rust.fish
+    ~/.config/fish/conf.d/chruby.fish: config/fish/conf.d/chruby.fish
+    ~/.config/fish/conf.d/dev.fish: config/fish/conf.d/dev.fish
+    ~/.config/fish/conf.d/bobthefish.fish: config/fish/conf.d/bobthefish.fish
+
+- shell:
+    - brew bundle
+    - [
+        curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim,
+        Install vim-plug,
+      ]
+    - [vim -c ":PlugInstall|q|q", Install vim plugins]
+    - [
+        curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher,
+        Install fisher,
+      ]
+    - fisher update

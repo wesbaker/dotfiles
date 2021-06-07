@@ -12,7 +12,6 @@ Creates the following dotfiles:
 
 ## Installation
 
+- [Install Homebrew](https://docs.brew.sh/Installation)
 - `git clone git@github.com:wesbaker/dotfiles.git`
-- `bundle install`
-- Make sure the various dotfiles this project creates don't exist
-- `rake install`
+- `./install`
