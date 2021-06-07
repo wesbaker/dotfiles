@@ -4,6 +4,7 @@
   editor = /usr/local/bin/vim
   trustctime = false
 	autocrlf = input
+	commitGraph = true
 [color]
   branch = auto
   diff = auto
@@ -31,6 +32,7 @@
   compactionHeuristic = true
   tool = Kaleidoscope
   colorMoved = zebra
+	algorithm = patience
 [interactive]
   diffFilter = diff-highlight
 [color "diff-highlight"]
@@ -57,3 +59,18 @@
 	email = wes@wesbaker.com
 [pull]
 	rebase = false
+[credential]
+	helper =
+	helper = store --file /opt/dev/var/private/git_credential_store
+[gc]
+	writeCommitGraph = true
+[protocol]
+	version = 2
+[url "https://github.com/Shopify/"]
+	insteadOf = git@github.com:Shopify/
+	insteadOf = git@github.com:shopify/
+	insteadOf = ssh://git@github.com/Shopify/
+	insteadOf = ssh://git@github.com/shopify/
+[includeif "gitdir:~/src/github.com/Shopify/"]
+	path = /Users/wesbaker/src/github.com/Shopify/.gitconfig_include
+

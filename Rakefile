@@ -13,7 +13,7 @@ $symlinks = {
   '~/.config/fish/config.fish': 'config/fish/config.fish',
   '~/.config/fish/conf.d/rust.fish': 'config/fish/conf.d/rust.fish',
   '~/.config/fish/conf.d/chruby.fish': 'config/fish/conf.d/chruby.fish',
-  '~/.config/fish/conf.d/fnm.fish': 'config/fish/conf.d/fnm.fish',
+  '~/.config/fish/conf.d/dev.fish': 'config/fish/conf.d/dev.fish',
   '~/.config/fish/conf.d/bobthefish.fish': 'config/fish/conf.d/bobthefish.fish'
 }
 
