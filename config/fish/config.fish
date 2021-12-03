@@ -1,6 +1,6 @@
 # Abbreviations (like aliases, but better)
 abbr -a -g l exa -lh
-abbr -a -g c code-insiders
+abbr -a -g c code
 abbr -a -g gst git status
 abbr -a -g v vim
 abbr -a -g marked open -a 'Marked 2'

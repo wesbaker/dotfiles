@@ -74,3 +74,5 @@
 [includeif "gitdir:~/src/github.com/Shopify/"]
 	path = /Users/wesbaker/src/github.com/Shopify/.gitconfig_include
 
+[init]
+	defaultBranch = main
