@@ -21,7 +21,6 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'wakatime/vim-wakatime'
 Plug 'mechatroner/rainbow_csv'
 
 " Syntax/Language

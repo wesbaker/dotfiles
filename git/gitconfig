@@ -59,6 +59,7 @@
 	email = wes@wesbaker.com
 [pull]
 	rebase = false
+	default = current
 [credential]
 	helper =
 	helper = store --file /opt/dev/var/private/git_credential_store
