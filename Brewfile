@@ -1,9 +1,11 @@
 tap 'homebrew/cask-versions'
 tap 'epk/epk'
 
+brew 'antigen'
 brew 'bat'
 brew 'duf'
 brew 'exa'
+brew 'fnm'
 brew 'fzf'
 brew 'git'
 brew 'gh'

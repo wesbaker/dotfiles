@@ -1,8 +1,17 @@
+# Load in homebrew autocomplete
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
 # Load in homebrew
 [[ -x /opt/homebrew/bin//brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
 # Load in Antigen
-source /usr/local/share/antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 
 # Load the oh-my-zsh library
 antigen use oh-my-zsh
