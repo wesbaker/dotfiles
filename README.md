@@ -14,4 +14,6 @@ Creates the following dotfiles:
 
 - [Install Homebrew](https://docs.brew.sh/Installation)
 - `git clone git@github.com:wesbaker/dotfiles.git`
+- `git submodule init`
+- `git submodule update`
 - `./install`
