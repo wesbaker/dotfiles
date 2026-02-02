@@ -1,90 +1,26 @@
-set shell=/bin/bash
-set nocompatible
-filetype off
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'sjl/gundo.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/vim-easy-align'
-Plug 'Raimondi/delimitMate'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-speeddating'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-sensible'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'mechatroner/rainbow_csv'
-
-" Syntax/Language
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx', { 'for': 'javascript' }
-Plug 'tpope/vim-markdown', { 'for': 'markdown' }
-Plug 'tpope/vim-rails', { 'for': ['ruby'] }
-Plug 'vim-ruby/vim-ruby', { 'for': ['ruby'] }
-Plug 'w0rp/ale'
-Plug 'stephpy/vim-yaml'
-
-" Theme
-Plug 'gertjanreynaert/cobalt2-vim-theme'
-
-call plug#end()
-
-" Turn off VI compatability, we won't need it where we're going
+" Minimal vimrc for git commits and quick edits
 set nocompatible
 
-" Whitespace
-set listchars=tab:▸\
-set list
-
-" Alright, here's a whole bunch of stuff I have no clue about :)
+" Display
 set number
-set encoding=utf-8
+syntax on
 set scrolloff=3
-set showmode
-set showcmd
-set hidden
-set visualbell
 
-" Use tabs instead of opening a buffer on top of another
-set switchbuf=usetab
+" Tabs and spaces
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
 
-" Change the leader to comma, because backslash is so passe
-let mapleader = ","
-
-" Searching like it's 1999
+" Search
 set ignorecase
 set smartcase
-set gdefault
 set incsearch
 set hlsearch
 
-" Textwrap, sho' nuf
-set wrap
-set textwidth=0
-set linebreak
-set nolist
-set textwidth=0
-set wrapmargin=0
-let &showbreak = '→ '
-set colorcolumn=80
-
-" Ditch backup files
+" No swap/backup files
 set nobackup
 set noswapfile
 
-" Strip trailing whitespace
-autocmd BufWritePre * StripWhitespace
-let g:better_whitespace_filetypes_blacklist=['markdown']
-
-" Git Specific
-" http://blog.ezyang.com/2010/03/vim-textwidth/
-autocmd Filetype gitcommit setlocal spell tw=72 fo=cqt wm=0 cc=72
-
+" Git commit specific settings
+autocmd Filetype gitcommit setlocal spell tw=72 colorcolumn=72
